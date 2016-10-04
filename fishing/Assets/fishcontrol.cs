@@ -3,6 +3,7 @@ using System.Collections;
 
 public class fishcontrol : MonoBehaviour
 {
+    //http://answers.unity3d.com/questions/658492/how-do-i-add-fishing-to-my-game.html
 
     // Set public variables in Inspector
     public GameObject pole;                    // Assign a fishing pole prefab in Inspector; tilt & angle to your liking
@@ -44,9 +45,6 @@ public class fishcontrol : MonoBehaviour
         if (pole == null || lineStart == null)
             return;
 
-        // Start Fishing via 'F'; modify for your game and don't do this at all
-        // instead have your game's action dispatcher do GetComponent<QM_Fishing>().ActionDispatcher();
-        // on hotkey press, icon click, whatever
         if (Input.GetButton("Fire1"))
         {
             ActionMain();
